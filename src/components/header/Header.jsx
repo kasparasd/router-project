@@ -20,10 +20,15 @@ export function Header({isLogedIn, logOut}) {
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><Link to="/" className="nav-link px-2 link-danger">Home</Link></li>
-                    {isLogedIn ? '' : <li><Link to="/register" className="nav-link px-2">Register</Link></li>}
+                    <li><Link to="/register" className="nav-link px-2">Register</Link></li>
+                    <li><Link to="/login" className="nav-link px-2">Log In</Link></li>
+                    <li><Link to="/profile" className="nav-link px-2">Profile</Link></li>
+                    <li><Link to="/" onClick={handleLogout} className="nav-link px-2">Log out</Link></li>
+                    <li><Link to="/link" className="nav-link px-2">Invalid link</Link></li>
+                    {/* {isLogedIn ? '' : <li><Link to="/register" className="nav-link px-2">Register</Link></li>}
                     {isLogedIn ? '': <li><Link to="/login" className="nav-link px-2">Log In</Link></li>}
                     {isLogedIn ? <li><Link to="/profile" className="nav-link px-2">Profile</Link></li> : ''}
-                    {isLogedIn ? <li><Link to="/" onClick={handleLogout} className="nav-link px-2">Log out</Link></li> : ''}
+                    {isLogedIn ? <li><Link to="/" onClick={handleLogout} className="nav-link px-2">Log out</Link></li> : ''} */}
                     
                 </ul>
             </header>
